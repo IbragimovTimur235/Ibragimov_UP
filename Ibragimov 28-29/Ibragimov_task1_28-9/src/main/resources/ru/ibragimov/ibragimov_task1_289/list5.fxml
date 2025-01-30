@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ibragimov.ibragimov_task1_289.controller.list5">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+                     <children>
+                        <Button mnemonicParsing="false" text="back">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                        <Label prefHeight="38.0" prefWidth="381.0" text="Марафон скилс 2016" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Login">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="40.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="Регестрация бегуна" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label contentDisplay="CENTER" text="Пожалуйста заполните всю информацию,что бы зарегестрироваться на Skills" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Marathon 2016 проводимом в Москве.С вами свяжутся после" />
+                  <Label text="регестрации для уточнения оплаты и другой информации" />
+                  <HBox alignment="CENTER" prefHeight="152.0" prefWidth="600.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="588.0">
+                           <children>
+                              <Label text="Вид марафона" />
+                              <CheckBox mnemonicParsing="false" text="42км Полный марафон ($145)" />
+                              <CheckBox mnemonicParsing="false" text="21км Полумарафон ($75)" />
+                              <CheckBox mnemonicParsing="false" text="5км Малая дистанция ($20)" />
+                              <Label text="Детали спонсорства">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Взнос:">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Сумма взноса: ">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="598.0">
+                           <children>
+                              <Label text="Варианты комплектов" />
+                              <RadioButton mnemonicParsing="false" text="Номер бегуна + RFID браслет" textAlignment="JUSTIFY" />
+                              <RadioButton mnemonicParsing="false" text="1 Вариант + бейсболка и Бутылка воды" />
+                              <RadioButton mnemonicParsing="false" text="2 вариант + футболка+ браслет" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button fx:id="btn" mnemonicParsing="false" onAction="#butLogin" text="login">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btn2" mnemonicParsing="false" onAction="#butCancel" text="Cancel" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #575757;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label text="10 дней 1 час до начала марафона!" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
